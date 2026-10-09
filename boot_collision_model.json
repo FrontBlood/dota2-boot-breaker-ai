@@ -1,0 +1,33 @@
+{
+  "model": "linear_outgoing_angle_from_vertical",
+  "source": "boot_runs/telemetry_20260628_015928.jsonl",
+  "coordinate_convention": {
+    "impact_offset": "(boot_center_x - paddle_center_x) / 64",
+    "outgoing_angle_deg": "atan2(vx, -vy), right-positive"
+  },
+  "coefficients": {
+    "intercept_deg": -0.44,
+    "impact_offset_deg": 52.04,
+    "paddle_velocity_per_500pxs_deg": -14.62,
+    "incoming_vx_per_500pxs_deg": 8.44
+  },
+  "recommended_initial_model": {
+    "intercept_deg": 0.0,
+    "impact_offset_deg": 52.0,
+    "max_abs_angle_deg": 52.0,
+    "note": "Paddle-velocity and incoming-vx terms remain provisional because manual interception behavior is confounded with impact position."
+  },
+  "fit_quality": {
+    "raw_collisions": 61,
+    "plausible_collisions": 60,
+    "robust_fit_samples": 46,
+    "r_squared": 0.951
+  },
+  "stationary_paddle_bins": [
+    {"impact_range": [-1.25, -0.65], "samples": 4, "median_angle_deg": -43.6},
+    {"impact_range": [-0.65, -0.25], "samples": 8, "median_angle_deg": -15.4},
+    {"impact_range": [-0.25, 0.25], "samples": 13, "median_angle_deg": 4.8},
+    {"impact_range": [0.25, 0.65], "samples": 8, "median_angle_deg": 21.8},
+    {"impact_range": [0.65, 1.25], "samples": 3, "median_angle_deg": 45.6}
+  ]
+}

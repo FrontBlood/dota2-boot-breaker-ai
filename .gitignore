@@ -1,0 +1,51 @@
+# Python cache and local tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local configuration and secrets
+.env
+.env.*
+*.pem
+*.key
+*.crt
+*.pfx
+
+# Runtime telemetry, samples, and user outputs
+runs/
+boot_runs/
+*.log
+
+# Databases and local state
+*.db
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+*.wal
+*.shm
+
+# Build and packaged releases
+build/
+dist/
+release/
+*.spec
+*.exe
+*.zip
+*.7z
+*.rar
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

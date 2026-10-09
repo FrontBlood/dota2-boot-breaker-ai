@@ -1,0 +1,53 @@
+{
+  "roi": {"left": 740, "top": 480, "width": 440, "height": 440},
+  "dial": {
+    "center_x": 218,
+    "center_y": 220,
+    "radius": 188,
+    "angle_bins": 720,
+    "pointer_inner_ratio": 0.55,
+    "pointer_outer_ratio": 0.94,
+    "zone_inner_ratio": 0.58,
+    "zone_outer_ratio": 0.92
+  },
+  "vision": {
+    "yellow_hsv": {"h_min": 10, "h_max": 38, "s_min": 0, "s_max": 255, "v_min": 0, "v_max": 255},
+    "blue_hsv": {"h_min": 92, "h_max": 135, "s_min": 0, "s_max": 255, "v_min": 0, "v_max": 255},
+    "pointer_hsv": {"h_min": 105, "h_max": 135, "s_min": 35, "s_max": 255, "v_min": 180, "v_max": 255},
+    "pointer_min_score": 0.25,
+    "zone_pixel_ratio": 0.64,
+    "zone_min_width_deg": 1.5,
+    "smooth_bins": 3,
+    "adaptive_zone_color": true,
+    "zone_min_value": 10,
+    "zone_min_saturation": 22,
+    "yellow_opponent_min": 0.10,
+    "blue_opponent_min": 0.055,
+    "blue_zone_max_value": 175
+  },
+  "tracking": {
+    "history_ms": 220,
+    "min_samples": 4,
+    "max_jump_deg": 65.0,
+    "max_abs_speed_dps": 1800.0
+  },
+  "control": {
+    "input_latency_ms": 52.0,
+    "latency_jitter_ms": 10.0,
+    "base_margin_deg": 2.5,
+    "speed_error_fraction": 0.05,
+    "max_safe_speed_dps": 850.0,
+    "click_cooldown_ms": 140.0,
+    "feedback_timeout_ms": 350.0,
+    "rmb_accel_enabled": true,
+    "rmb_release_distance_deg": 28.0,
+    "rmb_max_accel_speed_dps": 650.0,
+    "blue_time_value_points": 120.0
+  },
+  "runtime": {
+    "show_debug": true,
+    "record_telemetry": true,
+    "idle_sleep_ms": 1,
+    "debug_scale": 0.9
+  }
+}
